@@ -10,12 +10,23 @@ body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 15px;
 	line-height: 32px;
+	height: 100%;
 	color: #777777;
 	margin: 0 auto;
 	background-image: url(http://1.bp.blogspot.com/-zdNHn72sED4/UPc5aB0f7FI/AAAAAAAAENo/9qOjODTYL6M/s1600/subtle_light_gray_background.jpg);
 	background-attachment: fixed;
 	/*width: 960px;*/
 }
+
+/*.pageWrap {
+	min-height: 100%;
+	margin-bottom: -70px;
+}
+
+.pageWrap:after {
+	content: "";
+	display: block;
+}*/
 
 /*Header==================================*/
 /*========================================*/
@@ -62,7 +73,7 @@ body {
 
 .about:hover {
 	text-decoration: underline;
-	/*background-color: #85e0d9;*/
+	color: #A1DDD9;
 }
 
 
@@ -81,6 +92,7 @@ body {
 
 .portfolio:hover {
 	text-decoration: underline;
+	color: #A1DDD9;
 }
 
 .contact {
@@ -94,6 +106,7 @@ body {
 
 .contact:hover {
 	text-decoration: underline;
+	color: #A1DDD9;
 }
 
 /*Main====================================*/
@@ -123,7 +136,7 @@ body {
 
 .bodyInfo p {
 	font-size: 14px;
-	color: #9A8D8C;
+	color: #777777;
 	margin-right: 25px;
 }
 
@@ -147,6 +160,7 @@ body {
 
 .connectWithMe {
 	width: 210px;
+	/*width: 270px;*/
 	background-color: #fff;
 	float: left;
 	position: absolute;
@@ -172,7 +186,7 @@ body {
 	margin-right: 20px;
 	margin-bottom: 10px;
 	margin-top: 5px;
-	border-width: 0.5px;
+	border-width: 0.75px;
 	border-style: solid;
 }
 
@@ -185,12 +199,22 @@ body {
 	margin-left: 20px;
 }
 
+#gitHubImage img:hover {
+	border: 2px solid lightgrey;
+	transform: rotate(-10deg);
+}
+
 #linkedInImage {
 	text-decoration: none;
 }
 
 #linkedInImage img {
 	width: 55px;
+}
+
+#linkedInImage img:hover {
+	border: 2px solid lightgrey;
+	transform: rotate(-10deg);
 }
 
 #stackOverflowImage {
@@ -202,10 +226,116 @@ body {
 	margin-bottom: 3px;
 }
 
+#stackOverflowImage img:hover {
+	border: 2px solid lightgrey;
+	width: 55px;
+	padding: 3px;
+	margin-bottom: 0px;
+	transform: rotate(-10deg);
+}
+
+/*Contact(only on contact.html)===========*/
+/*========================================*/
+.contactSection {
+	position: absolute;
+	color: #777777;
+	background-color: #fff;
+	width: 650px;
+	float: left;
+	margin-left: 120px;
+	margin-right: 30px;
+	margin-top: 25px;
+	margin-bottom: 100px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	border: 1px solid #dddddd;
+}
+
+.contactSection h1 {
+	font font-weight: 400;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-size: 22px;
+	padding-bottom: 0px;
+}
+
+.contactSection hr {
+	color: #cccccc;
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#name {
+	width: 100%;
+	height: 30px;
+	border: 1.5px #dddddd solid;
+}
+
+#guestEmail {
+	width: 100%;
+	height: 30px;
+	border: 1.5px #dddddd solid;
+}
+
+#guestMessage {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 0px;
+	border: 1.5px #dddddd solid;
+}
+
+#submitButton {
+	background-color: #4aaaa5;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	font-size: 14px;
+}
+
+#submitButton:hover {
+	    opacity:.7;
+	}
+
+/*Portfolio(only on portfolio.html)=======*/
+/*========================================*/
+
+.portfolioSection {
+	position: absolute;
+	color: #777777;
+	background-color: #fff;
+	width: 650px;
+	float: left;
+	margin-left: 120px;
+	margin-right: 30px;
+	margin-top: 25px;
+	margin-bottom: 100px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	border: 1px solid #dddddd;
+}
+
+.portfolioSection h1 {
+	font font-weight: 400;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-size: 22px;
+	padding-bottom: 0px;
+}
+
+.portfolioSection hr {
+	color: #cccccc;
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+}
+
 /*Footer==================================*/
 /*========================================*/
 
-footer {
+.footer {
 	width: 100%;
 	height: 70px;
 	position: fixed;
@@ -215,7 +345,11 @@ footer {
 	border-top: 5px solid #4aaaa5;
 }
 
-footer p {
+.footer, .pageWrap:after {
+	height: 70px;
+}
+
+.footer p {
 	text-align: center;
 	color: lightgrey;
 	font-size: 9px;
