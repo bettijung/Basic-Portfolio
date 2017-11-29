@@ -31,7 +31,7 @@ body {
 /*Header==================================*/
 /*========================================*/
 
-.headerBar {
+.header-bar {
 	width: 100%;
 	height: 70px;
 	position: relative;
@@ -44,9 +44,9 @@ body {
 }
 
 
-.headerBar h1 {
+.header-bar h1 {
 	background-color: #4aaaa5;
-	font font-weight: 500;
+	font-weight: 600;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #fff;
 	font-size: 24px;
@@ -58,7 +58,7 @@ body {
 	position: absolute;
 }
 
-.about {
+.header-about {
 	color: #777777;
 	position: absolute;
 	margin-left: 810px;
@@ -71,13 +71,13 @@ body {
 	line-height: 100%;
 }
 
-.about:hover {
+.header-about:hover {
 	text-decoration: underline;
 	color: #A1DDD9;
 }
 
 
-.portfolio {
+.header-portfolio {
 	color: #777777;
 	position: absolute;
 	margin-left: 875px;
@@ -90,12 +90,12 @@ body {
 	line-height: 100%;
 }
 
-.portfolio:hover {
+.header-portfolio:hover {
 	text-decoration: underline;
 	color: #A1DDD9;
 }
 
-.contact {
+.header-contact {
 	color: #777777;
 	position: absolute;
 	margin-left: 950px;
@@ -104,7 +104,7 @@ body {
 	line-height: 100%;
 }
 
-.contact:hover {
+.header-contact:hover {
 	text-decoration: underline;
 	color: #A1DDD9;
 }
@@ -112,7 +112,7 @@ body {
 /*Main====================================*/
 /*========================================*/
 
-.bodyInfo {
+.body-info {
 	position: absolute;
 	color: #777777;
 	background-color: #fff;
@@ -126,29 +126,31 @@ body {
 	border: 1px solid #dddddd;
 }
 
-.bodyInfo h1 {
+.body-info h1 {
 	font font-weight: 400;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-size: 22px;
 	padding-bottom: 0px;
+	padding-top: 10px;
+	font-weight: 600;
 }
 
-.bodyInfo p {
+.body-info p {
 	font-size: 14px;
 	color: #777777;
 	margin-right: 25px;
 }
 
-.bodyInfo img {
+.body-info img {
 	float: left;
 	width: 170px;
 	padding-right: 20px;
 	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
-.bodyInfo hr {
+.body-info hr {
 	color: #cccccc;
 	margin-right: 20px;
 	border-width: 1px;
@@ -158,7 +160,7 @@ body {
 /*Aside===================================*/
 /*========================================*/
 
-.connectWithMe {
+.connect-with-me {
 	width: 210px;
 	/*width: 270px;*/
 	background-color: #fff;
@@ -171,8 +173,8 @@ body {
 	padding-bottom: 15px;
 }
 
-.connectWithMe h3 {
-	font font-weight: 300;
+.connect-with-me h3 {
+	font-weight: 600;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-size: 18px;
@@ -180,7 +182,7 @@ body {
 	margin-left: 20px;
 	margin-bottom: 5px;
 }
-.connectWithMe hr {
+.connect-with-me hr {
 	color: #dddddd;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -236,7 +238,7 @@ body {
 
 /*Contact(only on contact.html)===========*/
 /*========================================*/
-.contactSection {
+.contact-section {
 	position: absolute;
 	color: #777777;
 	background-color: #fff;
@@ -252,15 +254,16 @@ body {
 	border: 1px solid #dddddd;
 }
 
-.contactSection h1 {
-	font font-weight: 400;
+.contact-section h1 {
+	font-weight: 600;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-size: 22px;
 	padding-bottom: 0px;
+	padding-top: 10px;
 }
 
-.contactSection hr {
+.contact-section hr {
 	color: #cccccc;
 	width: 100%;
 	border-width: 1px;
@@ -301,7 +304,7 @@ body {
 /*Portfolio(only on portfolio.html)=======*/
 /*========================================*/
 
-.portfolioSection {
+.portfolio-section {
 	position: absolute;
 	color: #777777;
 	background-color: #fff;
@@ -317,19 +320,31 @@ body {
 	border: 1px solid #dddddd;
 }
 
-.portfolioSection h1 {
-	font font-weight: 400;
+.portfolio-section h1 {
+	font-weight: 600;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-size: 22px;
 	padding-bottom: 0px;
+	padding-top: 10px;
 }
 
-.portfolioSection hr {
+.portfolio-section hr {
 	color: #cccccc;
 	width: 100%;
 	border-width: 1px;
 	border-style: solid;
+}
+
+.portfolio-images {
+	text-decoration: none;
+}
+
+.portfolio-images img {
+	width: 49%;
+	
+
+	
 }
 
 /*Footer==================================*/
@@ -352,7 +367,7 @@ body {
 .footer p {
 	text-align: center;
 	color: lightgrey;
-	font-size: 9px;
-	padding-top: 10px;
+	font-size: 11px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
